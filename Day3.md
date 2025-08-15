@@ -16,7 +16,14 @@ A bit of tidying up and adding a couple of new things.
 - Error (what is not explained by trend or seasonality)
 
 1. Used `statsmodels` to easily show some seasonality on a monthly and quarterly basis.
+2. Used `from statsmodels.graphics.tsaplots import month_plot, quarter_plot` and `from statsmodels.tsa.seasonal import seasonal_decompose` to show different things. Need to understand better what it is that these charts actually show and why important.
 
+## Seasonal Auto Correlation Plots
+
+1. Auto-correlation is ok, but the issue is that it is influenced by the periods before and so on. 
+2. Need to use partial auto-correlation to see the correlation at two points in time, but removing the points in-between.
+    1. How does my coffee consumption today vs 3 days ago, not influnced by the time in between. 
+    
 
 
 
